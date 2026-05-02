@@ -1,0 +1,51 @@
+:root {
+  --color-brand: #2b7fff;
+  --color-primary-dark: #011c44;
+}
+ul {
+  list-style-type: none;
+}
+
+.button {
+  font-size: 18px;
+  color: #ffffff;
+  box-sizing: border-box;
+  width: 219px;
+  height: 53px;
+  background: #2b7fff;
+  border: 1px solid #000000;
+  border-radius: 32px;
+  cursor: pointer;
+}
+.button:hover {
+  color: var(--color-primary-dark)
+  background-color: transparent;
+}
+
+/*  меню в хедере */
+.header-link {
+  width: 73px;
+  height: 21px;
+  color: var(--color-primary-dark);
+  font-weight: 400;
+  font-size: 18px;
+}
+.header-link:hover {
+  width: 67px;
+  height: 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-brand);
+}
+.hero-title {
+  color: var(--color-brand);
+}
+.second-title {
+  color: var(--color-primary-dark);
+}
+.second-title .accent {
+  color: #2b7fff;
+}
+
+/* добавить боди и убрать в других стилях колор дарк */
