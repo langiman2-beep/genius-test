@@ -1,51 +1,255 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/roboto-v51-cyrillic_latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/roboto-v51-cyrillic_latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v51-cyrillic_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v51-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v51-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-v51-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v51-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/roboto-v51-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v51-cyrillic_latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  --color-primary: #011c44;
+  font-style: normal;
+  line-height: 1.16;
+}
+
 :root {
   --color-brand: #2b7fff;
-  --color-primary-dark: #011c44;
+  --color-primary: #011c44;
 }
 ul {
   list-style-type: none;
 }
 
+/*  меню в хедере */
+.header-link {
+  color: var(--color-primary);
+  font-style: normal;
+}
+.header-link:hover {
+  font-weight: 700;
+  color: var(--color-brand);
+}
+
+/* первая секция */
+.hero-title {
+  color: var(--color-brand);
+  font-size: 140px;
+  text-transform: capitalize;
+  line-height: 0.81;
+}
+.name-work {
+  font-size: 18px;
+}
+
+/* кнопка */
 .button {
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: #ffffff;
   box-sizing: border-box;
-  width: 219px;
-  height: 53px;
+  font-weight: 600;
   background: #2b7fff;
   border: 1px solid #000000;
   border-radius: 32px;
   cursor: pointer;
 }
 .button:hover {
-  color: var(--color-primary-dark)
+  color: var(--color-primary);
   background-color: transparent;
 }
+/* второй параграф первой секции */
+.consultation {
+  color: #4a4a4a;
+  font-size: 12px;
+  line-height: 1.5;
+}
 
-/*  меню в хедере */
-.header-link {
-  width: 73px;
-  height: 21px;
-  color: var(--color-primary-dark);
-  font-weight: 400;
-  font-size: 18px;
-}
-.header-link:hover {
-  width: 67px;
-  height: 21px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: var(--color-brand);
-}
-.hero-title {
-  color: var(--color-brand);
-}
+/* вторая секция */
 .second-title {
-  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 64px;
 }
 .second-title .accent {
   color: #2b7fff;
+  text-transform: capitalize;
+}
+.professional-services {
+  font-size: 22px;
+  line-height: 1.73;
+}
+.service {
+  font-size: 22px;
+  line-height: 1.73;
+}
+.service span {
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
-/* добавить боди и убрать в других стилях колор дарк */
+/* третья секция */
+.second-title-why {
+  font-weight: 700;
+  font-size: 64px;
+}
+.second-title-why span {
+  color: var(--color-brand);
+}
+.qualified-specialists {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.professional-equipment {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.our-mission {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+/* четвертая секция */
+.second-title-procedures {
+  font-weight: 700;
+  font-size: 64px;
+}
+.second-title-procedures span {
+  color: var(--color-brand);
+}
+.masks {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.18;
+}
+.injections {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.18;
+}
+.cleansing {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.18;
+}
+
+/* Как нас найти */
+.address {
+  font-weight: 700;
+  font-size: 64px;
+}
+.address span {
+  color: var(--color-brand);
+}
+.sign-up {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.18;
+}
+.sign-up span {
+  color: var(--color-brand);
+}
+/* кнопка записаться бесплатно */
+.button-secondary {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--color-brand);
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 32px;
+}
+.button-secondary:hover {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+/* согласие с политикой конфиденциальности */
+.i-agree {
+  color: #747272;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Футер */
+.footer-link {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.address-link {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.confidentiality {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.data-protection {
+  color: #747272;
+  font-size: 13px;
+  line-height: 1.15;
+}
