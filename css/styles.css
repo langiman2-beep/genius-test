@@ -62,6 +62,22 @@
   src: url('../fonts/roboto-v51-cyrillic_latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v21-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v21-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -91,8 +107,10 @@ ul {
 
 /* первая секция */
 .hero-title {
+  font-family: 'Play', sans-serif;
   color: var(--color-brand);
   font-size: 140px;
+  font-weight: 700;
   text-transform: capitalize;
   line-height: 0.81;
 }
@@ -125,6 +143,7 @@ ul {
 
 /* вторая секция */
 .second-title {
+  font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 64px;
 }
@@ -147,6 +166,7 @@ ul {
 
 /* третья секция */
 .second-title-why {
+  font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 64px;
 }
@@ -171,6 +191,7 @@ ul {
 
 /* четвертая секция */
 .second-title-procedures {
+  font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 64px;
 }
@@ -195,6 +216,7 @@ ul {
 
 /* Как нас найти */
 .address {
+  font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 64px;
 }
