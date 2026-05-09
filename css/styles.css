@@ -104,6 +104,8 @@ p {
   --color-primary: #011c44;
 }
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 .container {
@@ -113,14 +115,34 @@ ul {
   padding: 0 16px;
 }
 
-/*  меню в хедере */
+/*  хедер */
 .header-link {
   color: var(--color-primary);
   font-style: normal;
+  text-decoration: none;
 }
 .header-link:hover {
   font-weight: 700;
   color: var(--color-brand);
+  text-decoration: underline;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 /* первая секция */
