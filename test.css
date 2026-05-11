@@ -1,25 +1,4 @@
 /* beauty landing 2/c1 */
 color: #011c44;
 
-/* Як нас знайти */
-
-width: 432px;
-height: 75px;
-
-/* beauty landing 2/Н1 title */
-font-family: 'Play';
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 74px;
-display: flex;
-align-items: center;
-text-align: center;
-
-/* beauty landing 2/c1 */
-color: #011c44;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+background: #011c44;

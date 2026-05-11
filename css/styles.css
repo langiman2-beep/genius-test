@@ -110,9 +110,9 @@ ul {
 }
 .container {
   width: 100%;
-  max-width: 1248px;
+  max-width: 1288px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 24px;
 }
 
 /*  хедер */
@@ -334,4 +334,7 @@ ul {
   color: #747272;
   font-size: 13px;
   line-height: 1.15;
+}
+.footer {
+  background-color: var(--color-primary);
 }
