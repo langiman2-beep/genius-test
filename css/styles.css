@@ -89,6 +89,7 @@ body {
   --color-primary: #011c44;
   font-style: normal;
   line-height: 1.16;
+  margin: 0;
 }
 h1,
 h2,
@@ -105,7 +106,7 @@ p {
 }
 ul {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 .container {
@@ -113,6 +114,19 @@ ul {
   max-width: 1288px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
 }
 
 /*  хедер */
@@ -129,6 +143,7 @@ ul {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 40px;
 }
@@ -143,6 +158,16 @@ ul {
   gap: 56px;
   flex-grow: 1;
   justify-content: center;
+}
+.header-nav > a {
+  fill: var(--color-brand);
+}
+
+/* кнопки контактов в хедере */
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 /* первая секция */
@@ -173,6 +198,8 @@ ul {
   border: 1px solid #000000;
   border-radius: 32px;
   cursor: pointer;
+  width: 219px;
+  height: 53px;
 }
 .button:hover {
   color: var(--color-primary);
@@ -337,4 +364,11 @@ ul {
 }
 .footer {
   background-color: var(--color-primary);
+}
+
+/* кнопки контактов в футере */
+.footer-contact {
+  display: flex;
+  gap: 32px;
+  filter: invert(1);
 }
