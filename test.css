@@ -1,24 +1,3 @@
 /* beauty landing 2/c1 */
 color: #011c44;
-
-background: #011c44;
-
-/* Україна, м. Київ, вул. Тараса Шевченка 5 */
-
-width: 203px;
-height: 38px;
-
-/* beauty landing 2/Н6 */
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-
-/* beauty landing 2/background */
-color: #ffffff;
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
+/* форма */

@@ -126,6 +126,7 @@ html {
   scroll-behavior: smooth;
 }
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -173,9 +174,14 @@ a {
 /* первая секция */
 .hero-section {
   padding: 122px 0 126px 0;
+  background-image: url('../images/girle-procedure.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 .hero-title {
   margin-bottom: 40px;
+  width: 530px;
   font-family: 'Play', sans-serif;
   color: var(--color-brand);
   font-size: 140px;
@@ -200,6 +206,7 @@ a {
   cursor: pointer;
   width: 219px;
   height: 53px;
+  margin-bottom: 14px;
 }
 .button:hover {
   color: var(--color-primary);
@@ -208,11 +215,32 @@ a {
 /* второй параграф первой секции */
 .consultation {
   color: #4a4a4a;
+  width: 240px;
   font-size: 12px;
   line-height: 1.5;
+  padding-left: 20px;
 }
 
 /* вторая секция */
+.transformation-section {
+  display: flex;
+  gap: 32px;
+}
+.transformation-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 709px;
+}
+.transformation-images {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.transformation-images > img {
+  border-radius: 50%;
+  width: 327px;
+  height: 327px;
+}
 .section-about-us-section {
   padding: 0 0 88px 0;
 }
@@ -221,6 +249,10 @@ a {
   margin-bottom: 40px;
   font-weight: 700;
   font-size: 64px;
+  margin-bottom: 40px;
+}
+.professional-services {
+  margin-bottom: 40px;
 }
 .second-title .accent {
   color: #2b7fff;
@@ -239,7 +271,37 @@ a {
   text-transform: capitalize;
 }
 
-/* третья секция */
+/* третья секция - почему люди выбирают нас */
+.section-why-us-section {
+  background: linear-gradient(
+    38.2deg,
+    rgba(43, 127, 255, 0.2) 39.74%,
+    rgba(43, 127, 255, 0) 54.16%,
+    rgba(43, 127, 255, 0) 66.66%
+  );
+}
+.card-list {
+  display: flex;
+  gap: 56px;
+  padding: 0 90px;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 32px;
+  width: 316px;
+  height: 181px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 32px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(168, 198, 245, 0.38);
+}
+.card-item > svg {
+  fill: var(--color-brand);
+  flex-shrink: 0;
+}
 .section-why-us-section {
   padding: 88px 0 48px 0;
 }
@@ -248,27 +310,20 @@ a {
   margin-bottom: 48px;
   font-weight: 700;
   font-size: 64px;
+  text-align: center;
 }
 .second-title-why span {
   color: var(--color-brand);
 }
-.qualified-specialists {
-  color: #000000;
-  font-size: 18px;
-  line-height: 1.33;
-}
-.professional-equipment {
-  color: #000000;
-  font-size: 18px;
-  line-height: 1.33;
-}
+.qualified-specialists,
+.professional-equipment,
 .our-mission {
   color: #000000;
   font-size: 18px;
   line-height: 1.33;
 }
 
-/* четвертая секция */
+/* четвертая секция- Наши процедуры*/
 .section-procedures-section {
   padding: 48px 0 48px 0;
 }
@@ -277,27 +332,77 @@ a {
   margin-bottom: 48px;
   font-weight: 700;
   font-size: 64px;
+  text-align: center;
 }
 .second-title-procedures span {
   color: var(--color-brand);
 }
-.masks {
-  color: #ffffff;
-  font-size: 22px;
-  line-height: 1.18;
-}
-.injections {
-  color: #ffffff;
-  font-size: 22px;
-  line-height: 1.18;
-}
+.masks,
+.injections,
 .cleansing {
   color: #ffffff;
   font-size: 22px;
   line-height: 1.18;
 }
+.procedures-images {
+  border-radius: 120px 4px;
+}
+.procedures-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.procedures-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100%-16px) / 3;
+}
+/* стрелки */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background-color: transparent;
+  fill: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.carousel-button:hover {
+  background-color: var(--color-brand);
+  fill: #ffffff;
+}
+
+.procedures-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+}
 
 /* Как нас найти */
+.contact-container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+/* .contact-map {
+  display: flex;
+  width: 605px;
+  height: 481px;
+  border-radius: 32px;
+  flex-shrink: 0;
+} */
+/* .contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 56px;
+  background-color: var(--color-primary);
+} */
 .section-contacts {
   padding: 48px 0 96px 0;
 }
@@ -351,6 +456,7 @@ a {
   color: #ffffff;
   font-size: 16px;
   line-height: 1.18;
+  text-decoration: none;
 }
 .confidentiality {
   color: #ffffff;
@@ -370,5 +476,5 @@ a {
 .footer-contact {
   display: flex;
   gap: 32px;
-  filter: invert(1);
+  stroke: #ffffff;
 }
