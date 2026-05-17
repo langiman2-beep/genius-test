@@ -1,3 +1,19 @@
 /* beauty landing 2/c1 */
 color: #011c44;
-/* форма */
+
+/* Frame 14570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 203px;
+height: 124px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;

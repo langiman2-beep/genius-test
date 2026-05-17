@@ -175,7 +175,7 @@ a {
 .hero-section {
   padding: 122px 0 126px 0;
   background-image: url('../images/girle-procedure.png');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -355,7 +355,7 @@ a {
 .procedures-item {
   display: flex;
   flex-direction: column;
-  flex-basis: calc(100%-16px) / 3;
+  flex-basis: calc((100%-32px) / 3);
 }
 /* стрелки */
 .carousel-button {
@@ -374,7 +374,7 @@ a {
 }
 .carousel-button:hover {
   background-color: var(--color-brand);
-  fill: #ffffff;
+  border-color: var(--color-brand);
 }
 
 .procedures-container {
@@ -390,20 +390,29 @@ a {
   gap: 32px;
   justify-content: center;
 }
-/* .contact-map {
+.contact-map {
   display: flex;
   width: 605px;
   height: 481px;
   border-radius: 32px;
   flex-shrink: 0;
-} */
-/* .contact-form {
+  overflow: hidden;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.contact-form {
   display: flex;
   flex-direction: column;
+  width: 423px;
+  height: 481px;
   padding: 48px 56px;
   background-color: var(--color-primary);
-} */
-.section-contacts {
+  border-radius: 32px;
+}
+.section-contacts-section {
   padding: 48px 0 96px 0;
 }
 .address {
@@ -428,25 +437,83 @@ a {
 .button-secondary {
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
+  width: 281px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
   font-size: 18px;
+  line-height: 1.16;
   background-color: var(--color-brand);
   cursor: pointer;
-  border: 1px solid #000;
+  border: 2px solid var(--color-brand);
   border-radius: 32px;
+  padding: 0;
 }
 .button-secondary:hover {
-  color: var(--color-primary);
+  color: #ffffff;
   background-color: transparent;
 }
 /* согласие с политикой конфиденциальности */
 .i-agree {
   color: #747272;
   font-size: 12px;
+  width: 213px;
   line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* Футер */
+.footer {
+  background-color: var(--color-primary);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 48px 0;
+}
+
+/* делю на блоки футер */
+.footer-logo {
+  display: flex;
+  fill: var(--color-brand);
+  flex-shrink: 0;
+  width: 83px;
+  height: 42px;
+  justify-content: flex-start;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.footer-nav ul,
+.footer-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-address-list {
+  margin-bottom: 16px;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 16px;
+}
+
+/* классы внутри основных блоков футера */
 .footer-link {
   color: #ffffff;
   font-size: 16px;
@@ -467,9 +534,6 @@ a {
   color: #747272;
   font-size: 13px;
   line-height: 1.15;
-}
-.footer {
-  background-color: var(--color-primary);
 }
 
 /* кнопки контактов в футере */
