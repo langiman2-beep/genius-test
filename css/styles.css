@@ -179,6 +179,9 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
 }
+.hero-container {
+  margin-left: 105px;
+}
 .hero-title {
   margin-bottom: 40px;
   width: 530px;
@@ -235,12 +238,21 @@ a {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 500px;
 }
 .transformation-images > img {
   border-radius: 50%;
   width: 327px;
   height: 327px;
 }
+/* размещаю фотки в шахматном порядке */
+.transformation-images img:first-child {
+  align-self: flex-start;
+}
+.transformation-images img:last-child {
+  align-self: flex-end;
+}
+
 .section-about-us-section {
   padding: 0 0 88px 0;
 }
@@ -420,6 +432,7 @@ a {
   margin-bottom: 48px;
   font-weight: 700;
   font-size: 64px;
+  text-align: center;
 }
 .address span {
   color: var(--color-brand);
@@ -505,6 +518,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 0;
+  font-style: normal;
 }
 .footer-info {
   display: flex;
