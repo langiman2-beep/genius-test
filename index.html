@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -63,7 +63,9 @@
           <div class="hero-container">
             <p class="name-work">Косметологічна клініка</p>
             <h1 class="hero-title">Beauty Zone</h1>
-            <button class="button" type="button">Замовити дзвінок</button>
+            <button class="button modal-btn-open" type="button">
+              Замовити дзвінок
+            </button>
             <p class="consultation">
               Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
@@ -146,31 +148,31 @@
             </button>
             <ul class="procedures-list">
               <li class="procedures-item">
-                <p class="masks">Маски для обличчя</p>
                 <img
                   class="procedures-images"
-                  src="./images/masks.jpg"
+                  src="./images/masks.png"
                   alt="Маски для обличчя"
                 />
+                <p class="masks">Маски для обличчя</p>
               </li>
               <li class="procedures-item">
-                <p class="injections">Ін'єкції для обличчя</p>
                 <img
                   class="procedures-images"
-                  src="./images/Injections.jpg"
+                  src="./images/Injections.png"
                   alt="Ін'єкції для обличчя"
                 />
+                <p class="injections">Ін'єкції для обличчя</p>
               </li>
               <li class="procedures-item">
-                <p class="cleansing">Очищення обличчя</p>
                 <img
                   class="procedures-images"
-                  src="./images/cleansing.jpg"
+                  src="./images/cleansing.png"
                   alt="Очищення обличчя"
                 />
+                <p class="cleansing">Очищення обличчя</p>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="48" height="48">
                 <use href="./images/sprite.svg#icon-arrow"></use>
               </svg>
@@ -286,5 +288,11 @@
         </div>
       </div>
     </footer>
+    <!-- <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div> -->
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
