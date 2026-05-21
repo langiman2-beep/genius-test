@@ -1,98 +1,10 @@
-/* процедуры де. */
-
-width: 344px;
-height: 456px;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-/* Mask group */
+/* pexels-photo-8101532-PhotoRoom 1 */
 
 position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
+width: 278px;
+height: 213px;
+left: 1193px;
+top: 126px;
 
-/* Rectangle 5081 */
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-background: #d9d9d9;
-border-radius: 120px 4px;
+background: url(pexels-photo-8101532-PhotoRoom.png);
 transform: matrix(-1, 0, 0, 1, 0, 0);
-
-/* image 1574 */
-
-position: absolute;
-visibility: hidden;
-width: 463px;
-height: 694px;
-left: -52px;
-top: -2px;
-
-background: url(image.png);
-
-/* image 1570 */
-
-position: absolute;
-visibility: hidden;
-width: 767px;
-height: 511px;
-left: -212px;
-top: -28px;
-
-background: url(image.png);
-
-/* image 1580 */
-
-position: absolute;
-left: -35.47%;
-right: -14.53%;
-top: -42.54%;
-bottom: -14.47%;
-
-background: url(image.png);
-
-/* Rectangle 5080 */
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-background: linear-gradient(
-  180.05deg,
-  rgba(1, 28, 68, 0) 48.53%,
-  rgba(1, 28, 68, 0.725825) 84.61%,
-  #011c44 101.39%
-);
-border-radius: 120px 4px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-
-/* Маски для обличчя */
-
-position: absolute;
-left: 33.43%;
-right: 22.38%;
-top: 81.58%;
-bottom: 7.02%;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-/* or 118% */
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #ffffff;

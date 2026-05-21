@@ -137,6 +137,7 @@ a {
   left: 0;
   width: 100%;
   padding-top: 32px;
+  padding-bottom: 32px;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(5px);
 }
@@ -235,34 +236,6 @@ a {
 }
 
 /* вторая секция */
-.transformation-section {
-  display: flex;
-  gap: 32px;
-}
-.transformation-text {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 709px;
-}
-.transformation-images {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 500px;
-}
-.transformation-images > img {
-  border-radius: 50%;
-  width: 327px;
-  height: 327px;
-}
-/* размещаю фотки в шахматном порядке */
-.transformation-images img:first-child {
-  align-self: flex-start;
-}
-.transformation-images img:last-child {
-  align-self: flex-end;
-}
-
 .section-about-us-section {
   padding: 0 0 88px 0;
 }
@@ -293,6 +266,47 @@ a {
   text-transform: capitalize;
 }
 
+.transformation-section {
+  display: flex;
+  gap: 32px;
+  position: relative;
+}
+.transformation-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 709px;
+}
+/* картинки второй секции */
+.transformation-images {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 500px;
+}
+.transformation-images > img {
+  border-radius: 50%;
+  width: 327px;
+  height: 327px;
+}
+/* размещаю фотки в шахматном порядке */
+.transformation-images img:first-child {
+  align-self: flex-start;
+}
+.transformation-images img:last-child {
+  align-self: flex-end;
+}
+/* размещение звёздочек */
+.svg-star-1 {
+  position: absolute;
+  top: 336px;
+  left: 858px;
+}
+.svg-star-2 {
+  position: absolute;
+  top: 32px;
+  right: 74px;
+  fill: var(--color-brand);
+}
 /* третья секция - почему люди выбирают нас */
 .section-why-us-section {
   background: linear-gradient(
@@ -373,15 +387,20 @@ a {
   bottom: 32px;
   left: 115px;
 }
-
-.procedures-images {
-  border-radius: 4px 120px;
+.overlay {
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
     180.05deg,
     rgba(1, 28, 68, 0) 48.53%,
     rgba(1, 28, 68, 0.725825) 84.61%,
     #011c44 101.39%
   );
+  border-radius: 4px 120px;
+}
+
+.procedures-images {
+  border-radius: 4px 120px;
 }
 .procedures-list {
   display: flex;
@@ -510,8 +529,10 @@ a {
 }
 
 /* Футер */
+
 .footer {
   background-color: var(--color-primary);
+  position: relative;
 }
 .footer-container {
   display: flex;
@@ -588,6 +609,17 @@ a {
   stroke: #ffffff;
 }
 
+.footer::before {
+  position: absolute;
+  content: '';
+  background-image: url(../images/footer-pipette.png);
+  width: 278px;
+  height: 213px;
+  background-repeat: no-repeat;
+  bottom: -61px;
+  right: -31px;
+}
+
 /* модальное окно */
 .backdrop {
   position: fixed;
@@ -600,6 +632,9 @@ a {
   align-items: center;
   justify-content: center;
   padding: 20px 0;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -619,12 +654,12 @@ a {
   position: absolute;
   top: 42px;
   right: 42px;
-  /* width: 32px;
+  width: 32px;
   height: 32px;
   background-color: transparent;
   border: none;
   color: #ffffff;
   font-size: 24px;
   line-height: 1;
-  cursor: pointer; */
+  cursor: pointer;
 }
