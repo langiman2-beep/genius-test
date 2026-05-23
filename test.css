@@ -1,10 +1,11 @@
-/* pexels-photo-8101532-PhotoRoom 1 */
-
-position: absolute;
-width: 278px;
-height: 213px;
-left: 1193px;
-top: 126px;
-
-background: url(pexels-photo-8101532-PhotoRoom.png);
-transform: matrix(-1, 0, 0, 1, 0, 0);
+.header-link {
+  color: var(--color-primary);
+  font-style: normal;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.header-link:hover {
+  font-weight: 700;
+  color: var(--color-brand);
+  text-decoration: underline;
+}

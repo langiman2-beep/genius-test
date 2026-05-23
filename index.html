@@ -207,12 +207,53 @@
               <p class="sign-up">
                 Запишіться <span>безкоштовно</span> та отримайте подарунок
               </p>
-              <button class="button-secondary" type="button">
-                Записатись безкоштовно
-              </button>
-              <p class="i-agree">
-                Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
-              </p>
+              <form name="contact-form" autocomplete="off" novalidate>
+                <div class="form-field">
+                  <label class="form-label visualli-hidden" for="user-name"
+                    >Ваше ім'я та прізвище</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visualli-hidden" for="user-phone"
+                    >Ваш номер телефону</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-phone"
+                    name="user-phone"
+                    placeholder="Ваш номер телефону"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visualli-hidden" for="user-email"
+                    >Ваша електронна пошта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Ваша електронна пошта"
+                  />
+                </div>
+                <button class="form-button button" type="submit">
+                  Записатись безкоштовно
+                </button>
+                <p class="form-i-agree">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="form-link" href="#" target="_blank"
+                    >з політикою конфіденційності</a
+                  >
+                </p>
+              </form>
             </div>
           </div>
         </div>
@@ -299,7 +340,58 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close" type="button">&#10005;</button>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="modal-sign-up">
+          Запишіться безкоштовно та отримайте подарунок
+        </p>
+        <form name="modal-label" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label visualli-hidden" for="user-name"
+              >Ваше ім'я та прізвище</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Ваше ім'я та прізвище"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visualli-hidden" for="user-phone"
+              >Ваш номер телефону</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              id="user-phone"
+              name="user-phone"
+              placeholder="Ваш номер телефону"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visualli-hidden" for="user-email"
+              >Ваша електронна пошта</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Ваша електронна пошта"
+            />
+          </div>
+          <button class="form-button button" type="submit">
+            Записатись безкоштовно
+          </button>
+          <p class="form-i-agree">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="form-link" href="#" target="_blank"
+              >з політикою конфіденційності</a
+            >
+          </p>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
