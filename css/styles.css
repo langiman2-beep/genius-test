@@ -194,7 +194,15 @@ a {
 /* первая секция */
 .hero-section {
   padding: 122px 0 126px 0;
-  background-image: url('../images/girle-procedure.png');
+  background-image:
+    linear-gradient(
+      89.38deg,
+      #ffffff 30.62%,
+      rgba(255, 255, 255, 0.850898) 41.31%,
+      rgba(255, 255, 255, 0.193204) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url('../images/girle-procedure.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
@@ -318,6 +326,40 @@ a {
   right: 74px;
   fill: var(--color-brand);
 }
+/* анимация звёзд */
+@keyframes star-animation {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.3;
+    filter: drop-shadow(0 0 2px #2b7fff);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 12px #2b7fff);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 0.7;
+    filter: drop-shadow(0 0 2px #2b7fff);
+  }
+}
+
+.svg-star-1,
+.svg-star-2 {
+  animation-name: star-animation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.svg-star-2 {
+  animation-duration: 2s;
+}
+.svg-star-1 {
+  animation-delay: 4s;
+  animation-direction: reverse;
+  animation-duration: 6s;
+}
+
 /* третья секция - почему люди выбирают нас */
 .section-why-us-section {
   background: linear-gradient(
@@ -513,6 +555,7 @@ a {
 .footer {
   background-color: var(--color-primary);
   position: relative;
+  overflow: hidden;
 }
 .footer-container {
   display: flex;
