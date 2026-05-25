@@ -194,15 +194,7 @@ a {
 /* первая секция */
 .hero-section {
   padding: 122px 0 126px 0;
-  background-image:
-    linear-gradient(
-      89.38deg,
-      #ffffff 30.62%,
-      rgba(255, 255, 255, 0.850898) 41.31%,
-      rgba(255, 255, 255, 0.193204) 58.65%,
-      rgba(255, 255, 255, 0) 72.78%
-    ),
-    url('../images/girle-procedure.png');
+  background-image: url('../images/girle-procedure.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
@@ -365,15 +357,8 @@ a {
   padding: 88px 0 48px 0;
 }
 .section-why-us-section {
-  background-image:
-    url(../images/background-why-us.png),
-    linear-gradient(
-      38.2deg,
-      rgba(43, 127, 255, 0.2) 39.74%,
-      rgba(43, 127, 255, 0) 54.16%,
-      rgba(43, 127, 255, 0) 66.66%
-    );
-  background-size: contain;
+  background-image: url(../images/background-why-us.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
 }
