@@ -1,153 +1,21 @@
-/* блок 2 */
+/* Замовити дзвінок *
+/* Запишіться безкоштовно та отримайте подарунок */
 
-position: absolute;
-width: 1240px;
-height: 695px;
-left: 100px;
-top: 657px;
+width: 274px;
+height: 52px;
 
-/* Frame 14557 */
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 40px;
-
-position: absolute;
-width: 709px;
-height: 456px;
-left: 100px;
-top: 697px;
-
-/* Перевтілюйтесь в beauty zone! */
-
-width: 529px;
-height: 148px;
-
-/* beauty landing 2/Н1 title */
-font-family: 'Play';
+/* beauty landing 2/Н3 */
+font-family: 'Roboto';
 font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 74px;
+font-weight: 600;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
 
-/* beauty landing 2/c1 */
-color: #011c44;
+/* beauty landing 2/background */
+color: #ffffff;
 
 /* Inside auto layout */
 flex: none;
 order: 0;
 flex-grow: 0;
-
-/* Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя та тіла. */
-
-width: 709px;
-height: 76px;
-
-/* beauty landing 2/Н4 */
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 38px;
-/* or 173% */
-
-/* beauty landing 2/c1 */
-color: #011c44;
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-/* B beauty zone ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість. З нами краса назавжди! */
-
-width: 709px;
-height: 152px;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 38px;
-/* or 173% */
-
-/* beauty landing 2/c1 */
-color: #011c44;
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
-/* изображ. */
-
-position: absolute;
-width: 499px;
-height: 695px;
-left: 841px;
-top: 657px;
-
-/* Mask group */
-
-position: absolute;
-width: 327px;
-height: 327px;
-left: 841px;
-top: 657px;
-
-/* beauty landing 2/Ef2 */
-filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
-
-/* Ellipse 212 */
-
-position: absolute;
-width: 327px;
-height: 327px;
-left: 841px;
-top: 657px;
-
-background: #d9d9d9;
-
-/* image 1578 */
-
-position: absolute;
-width: 335px;
-height: 328px;
-left: 837px;
-top: 656px;
-
-background: url(image.png);
-
-/* Mask group */
-
-position: absolute;
-width: 327px;
-height: 328px;
-left: 1013px;
-top: 1024px;
-
-/* beauty landing 2/Ef2 */
-filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
-
-/* Ellipse 213 */
-
-position: absolute;
-width: 327px;
-height: 328px;
-left: 1013px;
-top: 1024px;
-
-background: #d9d9d9;
-
-/* image 1579 */
-
-position: absolute;
-width: 343px;
-height: 328px;
-left: 1005px;
-top: 1024px;
-
-background: url(image.png);

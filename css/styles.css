@@ -362,13 +362,22 @@ a {
 
 /* третья секция - почему люди выбирают нас */
 .section-why-us-section {
-  background: linear-gradient(
-    38.2deg,
-    rgba(43, 127, 255, 0.2) 39.74%,
-    rgba(43, 127, 255, 0) 54.16%,
-    rgba(43, 127, 255, 0) 66.66%
-  );
+  padding: 88px 0 48px 0;
 }
+.section-why-us-section {
+  background-image:
+    url(../images/background-why-us.png),
+    linear-gradient(
+      38.2deg,
+      rgba(43, 127, 255, 0.2) 39.74%,
+      rgba(43, 127, 255, 0) 54.16%,
+      rgba(43, 127, 255, 0) 66.66%
+    );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 .card-list {
   display: flex;
   gap: 56px;
@@ -391,9 +400,7 @@ a {
   fill: var(--color-brand);
   flex-shrink: 0;
 }
-.section-why-us-section {
-  padding: 88px 0 48px 0;
-}
+
 .second-title-why {
   font-family: 'Play', sans-serif;
   margin-bottom: 48px;
@@ -541,10 +548,13 @@ a {
   color: var(--color-brand);
 }
 .sign-up {
+  width: 274px;
   color: #ffffff;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.18;
+  text-align: center;
+  margin: 0 auto 32px;
 }
 .sign-up span {
   color: var(--color-brand);
@@ -675,7 +685,6 @@ a {
   background-color: var(--color-primary);
   background-image: url(../images/modal-background.png);
   border-radius: 48px;
-  overflow-y: auto;
 }
 .modal-btn-close {
   position: absolute;
@@ -690,6 +699,26 @@ a {
   line-height: 1;
   cursor: pointer;
 }
+.modal-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.modal-sign-up span {
+  color: var(--color-brand);
+}
+.modal-sign-up {
+  width: 274px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
+  margin: 0 auto 32px;
+}
+
 /* формы в модальном окне */
 .form-field {
   margin-bottom: 24px;

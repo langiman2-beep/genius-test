@@ -207,7 +207,7 @@
               <p class="sign-up">
                 Запишіться <span>безкоштовно</span> та отримайте подарунок
               </p>
-              <form name="contact-form" autocomplete="off" novalidate>
+              <form name="contact-form" autocomplete="off">
                 <div class="form-field">
                   <label class="form-label visualli-hidden" for="user-name"
                     >Ваше ім'я та прізвище</label
@@ -218,6 +218,8 @@
                     id="user-name"
                     name="user-name"
                     placeholder="Ваше ім'я та прізвище"
+                    required
+                    pattern="^[A-Za-zА-Яа-яЁёІіЇї\s]+$"
                   />
                 </div>
                 <div class="form-field">
@@ -230,6 +232,8 @@
                     id="user-phone"
                     name="user-phone"
                     placeholder="Ваш номер телефону"
+                    required
+                    pattern="^\+[0-9]{12}"
                   />
                 </div>
                 <div class="form-field">
@@ -242,6 +246,7 @@
                     id="user-email"
                     name="user-email"
                     placeholder="Ваша електронна пошта"
+                    required
                   />
                 </div>
                 <button class="form-button button" type="submit">
@@ -343,9 +348,9 @@
         <button class="modal-btn-close" type="button">&#10005;</button>
         <h2 class="modal-title">Замовити дзвінок</h2>
         <p class="modal-sign-up">
-          Запишіться безкоштовно та отримайте подарунок
+          Запишіться <span>безкоштовно</span> та отримайте подарунок
         </p>
-        <form name="modal-label" autocomplete="off" novalidate>
+        <form name="modal-label" autocomplete="off">
           <div class="form-field">
             <label class="form-label visualli-hidden" for="user-name"
               >Ваше ім'я та прізвище</label
@@ -356,6 +361,8 @@
               id="user-name"
               name="user-name"
               placeholder="Ваше ім'я та прізвище"
+              required
+              pattern="^[A-Za-zА-Яа-яЁёІіЇї\s]+$"
             />
           </div>
           <div class="form-field">
@@ -368,6 +375,8 @@
               id="user-phone"
               name="user-phone"
               placeholder="Ваш номер телефону"
+              required
+              pattern="^\+[0-9]{12}"
             />
           </div>
           <div class="form-field">
@@ -380,6 +389,7 @@
               id="user-email"
               name="user-email"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
           <button class="form-button button" type="submit">
