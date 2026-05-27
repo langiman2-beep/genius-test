@@ -1,0 +1,31 @@
+.hero-section {
+  padding: 122px 0 126px 0;
+  background-image: url('../images/girle-procedure.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.hero-container {
+  margin-left: 105px;
+}
+.hero-title {
+  margin-bottom: 40px;
+  width: 530px;
+  font-family: 'Play', sans-serif;
+  color: var(--color-brand);
+  font-size: 140px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 0.81;
+}
+.name-work {
+  font-size: 18px;
+}
+/* второй параграф первой секции */
+.consultation {
+  color: #4a4a4a;
+  width: 240px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-left: 20px;
+}

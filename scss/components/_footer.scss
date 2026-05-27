@@ -1,0 +1,93 @@
+/* Футер */
+
+.footer {
+  background-color: var(--color-primary);
+  position: relative;
+  overflow: hidden;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 48px 0;
+}
+
+/* делю на блоки футер */
+.footer-logo {
+  display: flex;
+  fill: var(--color-brand);
+  flex-shrink: 0;
+  width: 83px;
+  height: 42px;
+  justify-content: flex-start;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.footer-nav ul,
+.footer-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-address-list {
+  margin-bottom: 16px;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  font-style: normal;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 16px;
+}
+
+/* классы внутри основных блоков футера */
+.footer-link,
+.address-link,
+.confidentiality {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.18;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-link:hover,
+.address-link:hover,
+.confidentiality:hover {
+  font-weight: 700;
+  color: var(--color-brand);
+  text-decoration: underline;
+}
+
+.data-protection {
+  color: #747272;
+  font-size: 13px;
+  line-height: 1.15;
+}
+
+/* кнопки контактов в футере */
+.footer-contact {
+  display: flex;
+  gap: 32px;
+  stroke: #ffffff;
+}
+
+.footer::before {
+  position: absolute;
+  content: '';
+  background-image: url(../images/footer-pipette.png);
+  width: 278px;
+  height: 213px;
+  background-repeat: no-repeat;
+  bottom: -61px;
+  right: -31px;
+}

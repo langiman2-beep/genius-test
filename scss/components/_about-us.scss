@@ -1,0 +1,104 @@
+.section-about-us-section {
+  padding: 0 0 88px 0;
+}
+.second-title {
+  font-family: 'Play', sans-serif;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+.professional-services {
+  margin-bottom: 40px;
+}
+.second-title .accent {
+  color: #2b7fff;
+  text-transform: capitalize;
+}
+.professional-services {
+  font-size: 22px;
+  line-height: 1.73;
+}
+.service {
+  font-size: 22px;
+  line-height: 1.73;
+}
+.service span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.transformation-section {
+  display: flex;
+  gap: 32px;
+  position: relative;
+}
+.transformation-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 709px;
+}
+/* картинки второй секции */
+.transformation-images {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 500px;
+}
+.transformation-images > img {
+  border-radius: 50%;
+  width: 327px;
+  height: 327px;
+}
+/* размещаю фотки в шахматном порядке */
+.transformation-images img:first-child {
+  align-self: flex-start;
+}
+.transformation-images img:last-child {
+  align-self: flex-end;
+}
+/* размещение звёздочек */
+.svg-star-1 {
+  position: absolute;
+  top: 336px;
+  left: 858px;
+}
+.svg-star-2 {
+  position: absolute;
+  top: 32px;
+  right: 74px;
+  fill: var(--color-brand);
+}
+/* анимация звёзд */
+@keyframes star-animation {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.3;
+    filter: drop-shadow(0 0 2px #2b7fff);
+  }
+  50% {
+    transform: scale(1.4) rotate(180deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 12px #2b7fff);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 0.7;
+    filter: drop-shadow(0 0 2px #2b7fff);
+  }
+}
+
+.svg-star-1,
+.svg-star-2 {
+  animation-name: star-animation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.svg-star-2 {
+  animation-duration: 2s;
+}
+.svg-star-1 {
+  animation-delay: 4s;
+  animation-direction: reverse;
+  animation-duration: 6s;
+}

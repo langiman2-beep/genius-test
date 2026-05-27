@@ -1,0 +1,50 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+}
+.header-link {
+  color: var(--color-primary);
+  font-style: normal;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.header-link:hover {
+  font-weight: 700;
+  color: var(--color-brand);
+  text-decoration: underline;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+.header-nav > a {
+  fill: var(--color-brand);
+}
+
+/* кнопки контактов в хедере */
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
