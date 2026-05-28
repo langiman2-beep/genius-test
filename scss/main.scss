@@ -8,20 +8,22 @@
 
 @import './utils/_utils';
 
-@import './components/header';
+@import './layouts/header';
 
-@import './components/hero-section';
+@import './components/links';
+
+@import './layouts/hero-section';
 
 @import './components/buttons';
 
-@import './components/about-us';
+@import './layouts/about-us';
 
-@import './components/why-us';
+@import './layouts/why-us';
 
-@import './components/procedures';
+@import './layouts/procedures';
 
-@import './components/footer';
+@import './layouts/footer';
 
-@import './components/modal';
+@import './layouts/modal';
 
 @import './components/forms';
