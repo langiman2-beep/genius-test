@@ -1,14 +1,7 @@
 /* третья секция - почему люди выбирают нас */
 
 .section-why-us-section {
-  padding: 88px 0 48px 0;
-}
-
-.section-why-us-section {
-  background-image: url(../images/background-why-us.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+  padding: 0 0 48px;
 }
 
 .card-list {
@@ -50,4 +43,14 @@
   color: #000000;
   font-size: 18px;
   line-height: 1.33;
+}
+
+.sections-background {
+  background-image: url('../images/background-why-us.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 176px;
+  margin-top: -24px;
+  height: 1560px;
 }
