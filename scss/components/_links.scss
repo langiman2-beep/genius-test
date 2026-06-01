@@ -9,3 +9,12 @@
   color: var(--color-brand);
   text-decoration: underline;
 }
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}

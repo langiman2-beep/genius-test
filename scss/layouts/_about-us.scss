@@ -1,59 +1,50 @@
-.section-about-us-section {
+.about-us {
   padding: 0;
-}
-.second-title {
-  font-family: 'Play', sans-serif;
-  margin-bottom: 40px;
-  font-weight: 700;
-  font-size: 64px;
-  margin-bottom: 40px;
-}
-.professional-services {
-  margin-bottom: 40px;
-}
-.second-title .accent {
-  text-transform: capitalize;
-}
-.professional-services {
-  font-size: 22px;
-  line-height: 1.73;
-}
-.service {
-  font-size: 22px;
-  line-height: 1.73;
-}
-.service span {
-  font-weight: 600;
-  text-transform: capitalize;
+
+  &__container {
+    display: flex;
+    gap: 32px;
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 709px;
+    gap: 40px;
+  }
+
+  &__title {
+    font-family: 'Play', sans-serif;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.73;
+  }
 }
 
-.transformation-section {
-  display: flex;
-  gap: 32px;
-  position: relative;
-}
-.transformation-text {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 709px;
-}
 /* картинки второй секции */
-.transformation-images {
+.about-us__images {
   display: flex;
   flex-direction: column;
   gap: 40px;
   width: 500px;
 }
-.transformation-images > img {
+.about-us__images > img {
   border-radius: 50%;
   width: 327px;
   height: 327px;
 }
 /* размещаю фотки в шахматном порядке */
-.transformation-images img:first-child {
+.about-us__images img:first-child {
   align-self: flex-start;
 }
-.transformation-images img:last-child {
+.about-us__images img:last-child {
   align-self: flex-end;
 }
 /* размещение звёздочек */
