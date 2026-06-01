@@ -38,9 +38,12 @@
 .qualified-specialists,
 .professional-equipment,
 .our-mission {
+  display: flex;
   color: #000000;
   font-size: 18px;
   line-height: 1.33;
+  justify-content: center;
+  text-align: center;
 }
 
 .sections-background {
