@@ -6,7 +6,9 @@
 
 @import './utils/mixins';
 
-@import './utils/_utils';
+@import './utils/utils';
+
+@import './components/logo';
 
 @import './layouts/header';
 
