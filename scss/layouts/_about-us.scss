@@ -4,7 +4,6 @@
   &__container {
     display: flex;
     gap: 32px;
-    position: relative;
   }
 
   &__content {
@@ -16,50 +15,62 @@
 
   &__title {
     font-family: 'Play', sans-serif;
-    margin-bottom: 40px;
     font-weight: 700;
     font-size: 64px;
-    margin-bottom: 40px;
   }
 
   &__text {
     font-size: 22px;
     line-height: 1.73;
   }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+    position: relative;
+  }
+  &__image {
+    border-radius: 50%;
+    width: 327px;
+    height: 327px;
+
+    &:first-of-type {
+      align-self: flex-start;
+    }
+    &:last-of-type {
+      align-self: flex-end;
+    }
+  }
+
+  &__star {
+    position: absolute;
+    animation-name: star-animation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    &--small {
+      top: 32px;
+      right: 100px;
+      fill: var(--color-brand);
+      animation-duration: 2s;
+    }
+    &--large {
+      top: 336px;
+      right: 294px;
+      animation-delay: 4s;
+      animation-direction: reverse;
+      animation-duration: 6s;
+    }
+    &--tiny {
+      top: 270px;
+      right: 106px;
+      animation-duration: 1s;
+    }
+  }
 }
 
-/* картинки второй секции */
-.about-us__images {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 500px;
-}
-.about-us__images > img {
-  border-radius: 50%;
-  width: 327px;
-  height: 327px;
-}
-/* размещаю фотки в шахматном порядке */
-.about-us__images img:first-child {
-  align-self: flex-start;
-}
-.about-us__images img:last-child {
-  align-self: flex-end;
-}
-/* размещение звёздочек */
-.svg-star-1 {
-  position: absolute;
-  top: 336px;
-  left: 858px;
-}
-.svg-star-2 {
-  position: absolute;
-  top: 32px;
-  right: 74px;
-  fill: var(--color-brand);
-}
-/* анимация звёзд */
 @keyframes star-animation {
   0% {
     transform: scale(1) rotate(0deg);
@@ -76,19 +87,4 @@
     opacity: 0.7;
     filter: drop-shadow(0 0 2px #2b7fff);
   }
-}
-
-.svg-star-1,
-.svg-star-2 {
-  animation-name: star-animation;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-.svg-star-2 {
-  animation-duration: 2s;
-}
-.svg-star-1 {
-  animation-delay: 4s;
-  animation-direction: reverse;
-  animation-duration: 6s;
 }

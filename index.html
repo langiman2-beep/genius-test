@@ -90,52 +90,75 @@
                 препарати допоможуть вам підтримувати свою красу та молодість. З
                 нами краса назавжди!
               </p>
-              <svg class="svg-star-1" width="64" height="64">
-                <use href="./images/sprite.svg#icon-Star-1"></use>
-              </svg>
-              <svg class="svg-star-2" width="40" height="40">
-                <use href="./images/sprite.svg#icon-Star-2"></use>
-              </svg>
             </div>
             <div class="about-us__images">
-              <img src="./images/woman-1.jpg" alt="жінка з доглянутою шкірою" />
-              <img src="./images/woman-2.jpg" alt="жінка з доглянутою шкірою" />
+              <img
+                class="about-us__image"
+                src="./images/woman-1.jpg"
+                alt="жінка з доглянутою шкірою"
+              />
+              <img
+                class="about-us__image"
+                src="./images/woman-2.jpg"
+                alt="жінка з доглянутою шкірою"
+              />
+              <svg
+                class="about-us__star about-us__star--large"
+                width="64"
+                height="64"
+              >
+                <use href="./images/sprite.svg#icon-Star-1"></use>
+              </svg>
+              <svg
+                class="about-us__star about-us__star--small"
+                width="40"
+                height="40"
+              >
+                <use href="./images/sprite.svg#icon-Star-2"></use>
+              </svg>
+              <svg
+                class="about-us__star about-us__star--tiny"
+                width="16"
+                height="16"
+              >
+                <use href="./images/sprite.svg#icon-Star-3"></use>
+              </svg>
             </div>
           </div>
         </div>
       </section>
       <div class="sections-background">
-        <section class="section-why-us-section" id="why-us-section">
+        <section class="why-us" id="why-us-section">
           <div class="container">
-            <h2 class="second-title-why">
+            <h2 class="why-us__title">
               Чому люди <br />
-              <span class="text-brand">обирають нас</span>
+              <span class="text-brand bold">обирають нас</span>
             </h2>
-            <div class="advantages-card">
-              <ul class="card-list">
-                <li class="card-item">
-                  <svg width="48" height="48">
+            <div class="why-us__card">
+              <ul class="why-us__list">
+                <li class="why-us__item">
+                  <svg class="why-us__icon" width="48" height="48">
                     <use href="./images/sprite.svg#icon-specialists"></use>
                   </svg>
-                  <p class="qualified-specialists">
+                  <p class="why-us__text">
                     Всі наші косметологи мають вищу медичну освіту та стаж
                     роботи від 5 років
                   </p>
                 </li>
-                <li class="card-item">
-                  <svg width="48" height="48">
+                <li class="why-us__item">
+                  <svg сlass="why-us__icon" width="48" height="48">
                     <use href="./images/sprite.svg#icon-equipment"></use>
                   </svg>
-                  <p class="professional-equipment">
+                  <p class="why-us__text">
                     Використовуємо тільки професійне обладнання та косметику,
                     перевірену часом
                   </p>
                 </li>
-                <li class="card-item">
-                  <svg width="48" height="48">
+                <li class="why-us__item">
+                  <svg сlass="why-us__icon" width="48" height="48">
                     <use href="./images/sprite.svg#icon-mission"></use>
                   </svg>
-                  <p class="our-mission">
+                  <p class="why-us__text">
                     Наша мета - підкреслити переваги та приховати недоліки, а не
                     переробити
                   </p>
@@ -144,47 +167,50 @@
             </div>
           </div>
         </section>
-        <section class="section-procedures-section" id="procedures-section">
+        <section class="procedures" id="procedures-section">
           <div class="container">
-            <h2 class="second-title-procedures">
+            <h2 class="procedures__title">
               Наші <span class="text-brand">процедури</span>
             </h2>
-            <div class="procedures-container">
+            <div class="procedures__container">
               <button class="carousel-button" type="button">
                 <svg width="48" height="48">
                   <use href="./images/sprite.svg#icon-arrow"></use>
                 </svg>
               </button>
-              <ul class="procedures-list">
-                <li class="procedures-item">
+              <ul class="procedures__list">
+                <li class="procedures__item">
                   <img
-                    class="procedures-images"
+                    class="procedures__images"
                     src="./images/masks.png"
                     alt="Маски для обличчя"
                   />
                   <div class="overlay"></div>
-                  <p class="masks">Маски для обличчя</p>
+                  <p class="procedures__text">Маски для обличчя</p>
                 </li>
-                <li class="procedures-item">
+                <li class="procedures__item">
                   <img
-                    class="procedures-images"
+                    class="procedures__images"
                     src="./images/Injections.png"
                     alt="Ін'єкції для обличчя"
                   />
                   <div class="overlay"></div>
-                  <p class="injections">Ін'єкції для обличчя</p>
+                  <p class="procedures__text">Ін'єкції для обличчя</p>
                 </li>
-                <li class="procedures-item">
+                <li class="procedures__item">
                   <img
-                    class="procedures-images"
+                    class="procedures__images"
                     src="./images/cleansing.png"
                     alt="Очищення обличчя"
                   />
-                  <div class="overlay"></div>
-                  <p class="cleansing">Очищення обличчя</p>
+                  <div class="procedures__overlay"></div>
+                  <p class="procedures__text">Очищення обличчя</p>
                 </li>
               </ul>
-              <button class="carousel-button next" type="button">
+              <button
+                class="carousel-button carousel-button--next"
+                type="button"
+              >
                 <svg width="48" height="48">
                   <use href="./images/sprite.svg#icon-arrow"></use>
                 </svg>

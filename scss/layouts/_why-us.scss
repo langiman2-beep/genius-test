@@ -1,49 +1,47 @@
-/* третья секция - почему люди выбирают нас */
-
-.section-why-us-section {
+.why-us {
   padding: 0 0 48px;
-}
 
-.card-list {
-  display: flex;
-  gap: 56px;
-  padding: 0 90px;
-}
-.card-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  border-radius: 32px;
-  width: 316px;
-  height: 181px;
-  align-items: center;
-  justify-content: center;
-  padding: 24px 32px;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(168, 198, 245, 0.38);
-}
-.card-item > svg {
-  fill: var(--color-brand);
-  flex-shrink: 0;
-}
+  &__list {
+    display: flex;
+    gap: 56px;
+    padding: 0 90px;
+  }
 
-.second-title-why {
-  font-family: 'Play', sans-serif;
-  margin-bottom: 48px;
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
-}
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 32px;
+    width: 316px;
+    height: 181px;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 32px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(168, 198, 245, 0.38);
+  }
 
-.qualified-specialists,
-.professional-equipment,
-.our-mission {
-  display: flex;
-  color: #000000;
-  font-size: 18px;
-  line-height: 1.33;
-  justify-content: center;
-  text-align: center;
+  &__icon {
+    fill: var(--color-brand);
+    flex-shrink: 0;
+  }
+
+  &__title {
+    font-family: 'Play', sans-serif;
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+  }
+
+  &__text {
+    display: flex;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.33;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .sections-background {
