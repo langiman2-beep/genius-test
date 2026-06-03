@@ -1,20 +1,8 @@
-/* Чому люди обирають нас */
+/* Abakery landing/ndroid Small - 1 */
 
-width: 432px;
-height: 148px;
+position: relative;
+width: 360px;
+height: 640px;
 
-/* beauty landing 2/Н1 title */
-font-family: 'Play';
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 74px;
-text-align: center;
-
-/* beauty landing 2/с2 */
-color: #2b7fff;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+/* beauty landing 2/background */
+background: #ffffff;

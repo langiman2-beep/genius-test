@@ -25,10 +25,15 @@
     margin-bottom: 40px;
     width: 530px;
     font-family: 'Play', sans-serif;
-    font-size: 140px;
+    font-size: 54px;
     font-weight: 700;
     text-transform: capitalize;
-    line-height: 0.81;
+    line-height: 0.85;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 140px;
+      line-height: 0.81;
+    }
   }
 
   &__consultation {
