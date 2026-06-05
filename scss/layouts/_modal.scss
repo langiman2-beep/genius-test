@@ -1,6 +1,7 @@
 /* модальное окно */
 .backdrop {
   position: fixed;
+  overflow-y: auto;
   top: 0;
   left: 0;
   right: 0;
@@ -13,14 +14,17 @@
   transition:
     opacity 0.3s,
     visibility 0.3s;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
 }
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
+
 .modal {
   position: relative;
+  overflow-y: auto;
   width: 100%;
   max-width: 723px;
   height: 100%;
@@ -29,34 +33,36 @@
   background-color: var(--color-primary);
   background-image: url(../images/modal-background.png);
   border-radius: 48px;
-}
-.modal-btn-close {
-  position: absolute;
-  top: 42px;
-  right: 42px;
-  width: 32px;
-  height: 32px;
-  background-color: transparent;
-  border: none;
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 1;
-  cursor: pointer;
-}
-.modal-title {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
-  margin-bottom: 40px;
-}
 
-.modal-sign-up {
-  width: 274px;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 1.18;
-  text-align: center;
-  margin: 0 auto 32px;
+  &__btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    width: 274px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.18;
+    text-align: center;
+    margin: 0 auto 32px;
+  }
 }

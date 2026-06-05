@@ -82,7 +82,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="about-us" id="about-us">
+      <section class="about-us" id="about-us">
         <div class="container">
           <div class="about-us__container">
             <div class="about-us__content">
@@ -136,9 +136,9 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <div class="sections-background">
-        <!-- <section class="why-us" id="why-us-section">
+        <section class="why-us" id="why-us-section">
           <div class="container">
             <h2 class="why-us__title">
               Чому люди <br />
@@ -176,8 +176,8 @@
               </ul>
             </div>
           </div>
-        </section> -->
-        <!-- <section class="procedures" id="procedures-section">
+        </section>
+        <section class="procedures" id="procedures-section">
           <div class="container">
             <h2 class="procedures__title">
               Наші <span class="text-brand">процедури</span>
@@ -227,14 +227,17 @@
               </button>
             </div>
           </div>
-        </section> -->
+        </section>
       </div>
-      <!-- <section class="section-contacts-section" id="contacts-section">
+      <section class="contacts-section" id="contacts-section">
         <div class="container">
-          <h2 class="address">Як нас <span class="text-brand">знайти</span></h2>
-          <div class="contact-container">
-            <div class="contact-map">
+          <h2 class="contacts-section__title">
+            Як нас <span class="text-brand">знайти</span>
+          </h2>
+          <div class="contacts-section__container">
+            <div class="contacts-section__map">
               <iframe
+                class="contacts-section__map-frame"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10149.900546746441!2d30.756769459402005!3d50.506725588514286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1777362381643!5m2!1sru!2sua"
                 width="605"
                 height="481"
@@ -243,18 +246,18 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div class="contact-form">
-              <p class="sign-up">
+            <div class="contacts-section__form">
+              <p class="contacts-section__form-title">
                 Запишіться <span class="text-brand">безкоштовно</span> та
                 отримайте подарунок
               </p>
-              <form name="contact-form" autocomplete="off">
-                <div class="form-field">
-                  <label class="form-label visualli-hidden" for="user-name"
+              <form class="form" name="contact-form" autocomplete="off">
+                <div class="form__field">
+                  <label class="form__label visualli-hidden" for="user-name"
                     >Ваше ім'я та прізвище</label
                   >
                   <input
-                    class="form-input"
+                    class="form__input input"
                     type="text"
                     id="user-name"
                     name="user-name"
@@ -263,12 +266,12 @@
                     pattern="^[A-Za-zА-Яа-яЁёІіЇї\s]+$"
                   />
                 </div>
-                <div class="form-field">
-                  <label class="form-label visualli-hidden" for="user-phone"
+                <div class="form__field">
+                  <label class="form__label visualli-hidden" for="user-phone"
                     >Ваш номер телефону</label
                   >
                   <input
-                    class="form-input"
+                    class="form__input input"
                     type="tel"
                     id="user-phone"
                     name="user-phone"
@@ -277,12 +280,12 @@
                     pattern="^\+[0-9]{12}"
                   />
                 </div>
-                <div class="form-field">
-                  <label class="form-label visualli-hidden" for="user-email"
+                <div class="form__field">
+                  <label class="form__label visualli-hidden" for="user-email"
                     >Ваша електронна пошта</label
                   >
                   <input
-                    class="form-input"
+                    class="form__input input"
                     type="email"
                     id="user-email"
                     name="user-email"
@@ -290,12 +293,12 @@
                     required
                   />
                 </div>
-                <button class="form-button button" type="submit">
+                <button class="form__button button" type="submit">
                   Записатись безкоштовно
                 </button>
-                <p class="form-i-agree">
+                <p class="form__terms">
                   Натискаючи на кнопку я погоджуюсь
-                  <a class="form-link" href="#" target="_blank"
+                  <a class="form__link" href="#" target="_blank"
                     >з політикою конфіденційності</a
                   >
                 </p>
@@ -303,9 +306,9 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <a href="#" class="footer-logo logo">
@@ -384,22 +387,24 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">&#10005;</button>
-        <h2 class="modal-title">Замовити дзвінок</h2>
-        <p class="modal-sign-up">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          &#10005;
+        </button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__text">
           Запишіться <span class="text-brand">безкоштовно</span> та отримайте
           подарунок
         </p>
-        <form name="modal-label" autocomplete="off">
-          <div class="form-field">
-            <label class="form-label visualli-hidden" for="modal-name"
+        <form class="form" name="modal-label" autocomplete="off">
+          <div class="form__field form__field--modal">
+            <label class="form__label visualli-hidden" for="modal-name"
               >Ваше ім'я та прізвище</label
             >
             <input
-              class="form-input"
+              class="form__input input"
               type="text"
               id="modal-name"
               name="modal-name"
@@ -408,12 +413,12 @@
               pattern="^[A-Za-zА-Яа-яЁёІіЇї\s]+$"
             />
           </div>
-          <div class="form-field">
-            <label class="form-label visualli-hidden" for="modal-phone"
+          <div class="form__field form__field--modal">
+            <label class="form__label visualli-hidden" for="modal-phone"
               >Ваш номер телефону</label
             >
             <input
-              class="form-input"
+              class="form__input input"
               type="tel"
               id="modal-phone"
               name="modal-phone"
@@ -422,12 +427,12 @@
               pattern="^\+[0-9]{12}"
             />
           </div>
-          <div class="form-field">
-            <label class="form-label visualli-hidden" for="modal-email"
+          <div class="form__field form__field--modal">
+            <label class="form__label visualli-hidden" for="modal-email"
               >Ваша електронна пошта</label
             >
             <input
-              class="form-input"
+              class="form__input input"
               type="email"
               id="modal-email"
               name="modal-email"
@@ -435,12 +440,12 @@
               required
             />
           </div>
-          <button class="form-button button" type="submit">
+          <button class="form__button button" type="submit">
             Записатись безкоштовно
           </button>
-          <p class="form-i-agree">
+          <p class="form__terms">
             Натискаючи на кнопку я погоджуюсь
-            <a class="form-link" href="#" target="_blank"
+            <a class="form__link" href="#" target="_blank"
               >з політикою конфіденційності</a
             >
           </p>

@@ -1,53 +1,33 @@
-/* формы в модальном окне */
-.form-field {
-  margin-bottom: 24px;
-}
-.form-label {
-  display: block;
-}
-.form-input {
-  padding: 18px 32px;
-  width: 310px;
-  height: 52px;
-  border: 2px solid #747272;
-  border-radius: 32px;
-  font-size: 13px;
-  line-height: 1.15;
-  background-color: transparent;
-  color: #ffffff;
-  display: block;
-  margin: 0 auto;
-}
-
-.form-input::placeholder {
-  color: #ffffff;
-  font-size: 13px;
-  line-height: 1.15;
-}
-.form-input:focus {
-  background: #747272;
-  border: none;
-  outline: none;
-}
-.form-button {
-  display: block;
-  margin: 0 auto 8px;
-  width: 281px;
-}
-.form-button.button:hover {
-  background-color: transparent;
-  color: #ffffff;
-}
-.form-i-agree {
-  margin: 0 auto;
-  max-width: 215px;
-  color: #747272;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: center;
-}
-.form-link {
-  color: #747272;
-  text-underline-offset: 2px;
-  text-decoration: underline;
+.form {
+  &__field {
+    margin-bottom: 16px;
+  }
+  &__field--modal {
+    margin-bottom: 24px;
+  }
+  &__label {
+    display: block;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+    width: 281px;
+    &:hover {
+      background-color: transparent;
+      color: #ffffff;
+    }
+  }
+  &__terms {
+    margin: 0 auto;
+    max-width: 215px;
+    color: #747272;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  &__link {
+    color: #747272;
+    text-underline-offset: 2px;
+    text-decoration: underline;
+  }
 }
