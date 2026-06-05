@@ -21,12 +21,12 @@
     gap: 16px;
     justify-content: center;
   }
-  &__item {
-    display: flex;
-    flex-direction: column;
-    flex-basis: calc((100% - 32px) / 3);
-    transition: transform 0.3s;
-    position: relative;
+  // &__item {
+  //   display: flex;
+  //   flex-direction: column;
+  //   flex-basis: calc((100% - 32px) / 3);
+  //   transition: transform 0.3s;
+  //   position: relative;
 
     &:hover {
       transform: scale(1.05);
