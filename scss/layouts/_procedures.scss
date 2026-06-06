@@ -9,32 +9,42 @@
     text-align: center;
   }
 
-  &__container {
+  &__container-slider {
     display: flex;
     align-items: center;
     gap: 32px;
     justify-content: center;
   }
 
-  &__list {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
+  &__container {
+    overflow: hidden;
   }
-  // &__item {
-  //   display: flex;
-  //   flex-direction: column;
-  //   flex-basis: calc((100% - 32px) / 3);
-  //   transition: transform 0.3s;
-  //   position: relative;
 
-    &:hover {
-      transform: scale(1.05);
-    }
+  &__list {
+    padding: 10px 0;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__images,
+  &__overlay,
+  &__text {
+    transition: transform 0.3s ease;
+  }
+
+  &__item:hover &__images,
+  &__item:hover &__overlay,
+  &__item:hover &__text {
+    transform: scale(1.05);
   }
 
   &__images {
+    object-fit: cover;
     border-radius: 4px 120px;
+    height: 456px;
   }
 
   &__overlay {
