@@ -63,60 +63,58 @@
               <use href="./images/sprite.svg#icon-menu"></use>
             </svg>
           </button>
-          <div class="mobile-menu">
-            <button class="mobile-menu__btn-close menu-btn-close" type="button">
-              &times;
-            </button>
-            <a class="mobile-menu__logo logo" href="#">
-              <svg width="57" height="30">
-                <use href="./images/sprite.svg#icon-logo"></use>
-              </svg>
-            </a>
-            <ul class="mobile-menu__list">
-              <li>
-                <a class="mobile-menu__link" href="#about-us">Про нас</a>
-              </li>
-              <li>
-                <a class="mobile-menu__link" href="#why-us-section">Чому ми</a>
-              </li>
-              <li>
-                <a class="mobile-menu__link" href="#procedures-section"
-                  >Наші процедури</a
-                >
-              </li>
-              <li>
-                <a class="mobile-menu__link" href="#contacts-section"
-                  >Контакти</a
-                >
-              </li>
-            </ul>
-            <ul class="mobile-menu__social">
-              <li>
-                <a href="tel:+380960000007">
-                  <svg width="32" height="32">
-                    <use href="./images/sprite.svg#icon-telephone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg width="32" height="32">
-                    <use href="./images/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg width="32" height="32">
-                    <use href="./images/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </header>
+    <div class="mobile-menu">
+      <button class="mobile-menu__btn-close menu-btn-close" type="button">
+        &times;
+      </button>
+      <a class="mobile-menu__logo logo" href="#">
+        <svg width="57" height="30">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="mobile-menu__list">
+        <li>
+          <a class="mobile-menu__link" href="#about-us">Про нас</a>
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#why-us-section">Чому ми</a>
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#procedures-section"
+            >Наші процедури</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__link" href="#contacts-section">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__social">
+        <li>
+          <a href="tel:+380960000007">
+            <svg width="32" height="32">
+              <use href="./images/sprite.svg#icon-telephone"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="32" height="32">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="32" height="32">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="hero-section">
         <div class="container">
@@ -151,6 +149,13 @@
                 нами краса назавжди!
               </p>
             </div>
+            <svg
+              class="about-us__star about-us__star--mobile"
+              width="40"
+              height="40"
+            >
+              <use href="./images/sprite.svg#icon-Star-1"></use>
+            </svg>
             <div class="about-us__images">
               <img
                 class="about-us__image"
@@ -227,7 +232,7 @@
             </div>
           </div>
         </section> -->
-        <section class="procedures" id="procedures-section">
+        <!-- <section class="procedures" id="procedures-section">
           <div class="container">
             <h2 class="procedures__title">
               Наші <span class="text-brand">процедури</span>
@@ -294,7 +299,7 @@
               </button>
             </div>
           </div>
-        </section>
+        </section> -->
       </div>
       <!-- <section class="contacts-section" id="contacts-section">
         <div class="container">
@@ -459,7 +464,7 @@
         </div>
       </div>
     </footer> -->
-    <!-- <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
           &#10005;
@@ -522,7 +527,7 @@
           </p>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/procedures-slider.js"></script>
     <script src="./js/modal.js"></script>

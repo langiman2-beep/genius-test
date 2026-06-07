@@ -1,174 +1,19 @@
-/* Frame 14572 */
+/* Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя та тіла. */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
+width: 320px;
+height: 63px;
 
-position: absolute;
-width: 128px;
-height: 162px;
-left: 20px;
-top: 78px;
-
-/* Про нас */
-
-width: 52px;
-height: 16px;
-
+/* beauty landing 2/H5 */
 font-family: 'Roboto';
 font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
 
-/* beauty landing 2/с2 */
-color: #2b7fff;
+/* beauty landing 2/c1 */
+color: #011c44;
 
 /* Inside auto layout */
 flex: none;
 order: 0;
 flex-grow: 0;
-
-/* Чому ми */
-
-width: 57px;
-height: 16px;
-
-/* beauty landing 2/H8 */
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-
-/* beauty landing 2/c1 */
-color: #011c44;
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-/* Наші процедури */
-
-width: 107px;
-height: 16px;
-
-/* beauty landing 2/H8 */
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-
-/* beauty landing 2/c1 */
-color: #011c44;
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
-/* Контакти */
-
-width: 62px;
-height: 16px;
-
-/* beauty landing 2/H8 */
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-
-/* beauty landing 2/c1 */
-color: #011c44;
-
-/* Inside auto layout */
-flex: none;
-order: 3;
-flex-grow: 0;
-
-/* icon */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 16px;
-
-width: 128px;
-height: 34px;
-
-/* Inside auto layout */
-flex: none;
-order: 4;
-flex-grow: 0;
-
-/* telephone-receiver_icon-icons.com_56033 1 */
-
-width: 32px;
-height: 32px;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-/* Vector */
-
-position: absolute;
-left: 8.42%;
-right: 8.39%;
-top: 2.63%;
-bottom: 2.65%;
-
-/* beauty landing 2/c1 */
-background: #011c44;
-
-/* uit:facebook-f */
-
-width: 32px;
-height: 34px;
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-/* Vector */
-
-position: absolute;
-left: 25.73%;
-right: 23.23%;
-top: 6%;
-bottom: 6.5%;
-
-/* beauty landing 2/c1 */
-background: #011c44;
-
-/* ph:instagram-logo-light */
-
-width: 32px;
-height: 32px;
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
-/* Vector */
-
-position: absolute;
-left: 11.72%;
-right: 11.72%;
-top: 11.72%;
-bottom: 11.72%;
-
-/* beauty landing 2/c1 */
-background: #011c44;
