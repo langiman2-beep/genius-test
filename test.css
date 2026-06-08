@@ -1,19 +1,19 @@
-/* Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя та тіла. */
+/* Маски для обличчя */
 
-width: 320px;
-height: 63px;
+position: absolute;
+left: 33.43%;
+right: 22.38%;
+top: 81.58%;
+bottom: 7.02%;
 
-/* beauty landing 2/H5 */
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
-line-height: 21px;
+font-size: 22px;
+line-height: 26px;
+/* or 118% */
+display: flex;
+align-items: center;
+text-align: center;
 
-/* beauty landing 2/c1 */
-color: #011c44;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+color: #ffffff;
