@@ -9,9 +9,13 @@
   outline: none;
   border-radius: 32px;
   cursor: pointer;
-  width: 219px;
+  width: 241px;
   height: 53px;
   margin-bottom: 14px;
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 281px;
+  }
 }
 .button:hover {
   border: 2px solid var(--color-brand);

@@ -40,11 +40,17 @@
   &__list {
     padding: 10px 0;
     margin-bottom: 32px;
-  }
+    max-width: 330px;
 
-  &__item {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      max-width: 704px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 1064px;
+    }
+  }
+  s &__item {
     position: relative;
-    width: 100%;
   }
 
   &__images,
@@ -60,14 +66,15 @@
   }
 
   &__images {
-    width: 100%;
+    width: 344px;
+    height: 456px;
     object-fit: cover;
     border-radius: 4px 120px;
-    height: auto;
+    margin: 0 auto;
   }
 
   &__overlay {
-    width: 100%;
+    width: 344px;
     position: absolute;
     inset: 0;
     background: linear-gradient(
@@ -77,6 +84,7 @@
       #011c44 101.39%
     );
     border-radius: 4px 120px;
+    margin: 0 auto;
   }
 
   &__text {
@@ -86,8 +94,8 @@
     align-items: center;
     text-align: center;
     position: absolute;
-    bottom: 7.02%;
-    left: 33.43%;
+    bottom: 7%;
+    left: 40%;
   }
 
   &__button.carousel-button {
