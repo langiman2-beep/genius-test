@@ -1,7 +1,7 @@
 .contacts-section {
-  padding: 24px 0 0;
+  padding: 20px 0 0;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     padding: 48px 0 96px 0;
   }
   &__title {
@@ -14,7 +14,7 @@
     margin: 0 auto 24px;
     line-height: 1.18;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       width: 432px;
       font-family: 'Play';
       font-weight: 700;
@@ -31,7 +31,7 @@
     gap: 24px;
     justify-content: center;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
       gap: 32px;
     }
@@ -39,23 +39,17 @@
 
   &__map {
     display: flex;
-    width: calc(100% + 40px);
+    width: calc(100% + 48px);
     height: 481px;
-    margin: 0 -20px;
     border-radius: 0;
     flex-shrink: 0;
     overflow: hidden;
 
-    @media screen and (min-width: $bp-tablet) {
-      margin: 0;
-      width: 330px;
-      height: 481px;
-      border-radius: 32px;
-    }
-
     @media screen and (min-width: $bp-desktop) {
+      margin: 0;
       width: 605px;
       height: 481px;
+      border-radius: 32px;
     }
   }
   &__map-frame {
@@ -68,14 +62,14 @@
     flex-direction: column;
     justify-content: center;
     width: 320px;
-    height: 496px;
-    padding: 42px 24px;
+    height: 434px;
+    padding: 42px 10px;
     background-color: var(--color-primary);
     background-image: url(../images/modal-background.png);
     border-radius: 32px;
 
-    @media screen and (min-width: $bp-tablet) {
-      width: 423px;
+    @media screen and (min-width: $bp-desktop) {
+      width: 435px;
       height: 481px;
       padding: 48px 56px;
     }

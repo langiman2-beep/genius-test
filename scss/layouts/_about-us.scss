@@ -16,13 +16,13 @@
   }
 
   &__content {
+    display: flex;
     max-width: 320px;
     margin: 0 auto;
+    flex-direction: column;
 
     @media screen and (min-width: $bp-tablet) {
-      display: flex;
       max-width: 709px;
-      flex-direction: column;
       flex-basis: 709px;
       gap: 40px;
     }
@@ -46,7 +46,7 @@
     }
   }
 
-  &__text {
+  &__text-1 {
     font-size: 18px;
     line-height: 1.17;
     &:not(:last-child) {
@@ -55,6 +55,24 @@
 
     @media screen and (min-width: $bp-tablet) {
       font-size: 22px;
+      line-height: 1.73;
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__text-2 {
+    font-size: 18px;
+    max-width: 264px;
+    line-height: 1.17;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      max-width: 100%;
       line-height: 1.73;
       &:not(:last-child) {
         margin-bottom: 0;
@@ -88,8 +106,8 @@
 
   &__star {
     &--mobile {
-      right: 22px;
-      bottom: -20px;
+      right: 20px;
+      bottom: -10px;
       display: block;
 
       animation: mobile-star 4s ease-in-out infinite;
