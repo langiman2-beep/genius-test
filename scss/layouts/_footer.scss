@@ -1,7 +1,6 @@
-/* Футер */
-
 .footer {
   background-color: var(--color-primary);
+  background-image: url(../images/modal-background.png);
   position: relative;
   overflow: hidden;
 
@@ -10,6 +9,9 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 66px;
 
     @media screen and (min-width: $bp-tablet) {
       display: flex;
@@ -24,9 +26,16 @@
   &__logo {
     display: flex;
     flex-shrink: 0;
-    width: 83px;
-    height: 42px;
-    justify-content: flex-start;
+    width: 57px;
+    height: 30px;
+    margin-bottom: 26px;
+    justify-content: center;
+    @media screen and (min-width: $bp-tablet) {
+      width: 83px;
+      height: 42px;
+      padding-bottom: 0;
+      justify-content: flex-start;
+    }
   }
 
   &__nav,
@@ -38,27 +47,49 @@
   }
   &__info {
     gap: 16px;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
   }
 
   &__address {
     font-style: normal;
   }
 
-  &__nav-list,
-  &__address-list {
+  &__nav-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-left: 0; // НОВОЕ: Убираем дефолтный отступ браузера для идеальной центровки
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
   }
 
   &__address-list {
-    margin-bottom: 16px;
+    display: none;
+    padding-left: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
   }
 
   &__contact {
     display: flex;
     gap: 32px;
     stroke: #ffffff;
+    padding-left: 0;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: flex-start;
+    }
   }
 
   &__link,
@@ -84,13 +115,37 @@
   }
 
   &::before {
-    position: absolute;
-    content: '';
-    background-image: url(../images/footer-pipette.png);
-    width: 278px;
-    height: 213px;
-    background-repeat: no-repeat;
-    bottom: -61px;
-    right: -31px;
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      content: '';
+      background-image: url(../images/footer-pipette.png);
+      width: 278px;
+      height: 213px;
+      background-repeat: no-repeat;
+      bottom: -61px;
+      right: -31px;
+    }
+  }
+  @media screen and (max-width: ($bp-tablet - 1px)) {
+    .footer {
+      &__address,
+      &__info {
+        display: contents;
+      }
+
+      &__confidentiality {
+        order: 3;
+        text-align: center;
+      }
+
+      &__contact {
+        order: 4;
+      }
+
+      &__data-protection {
+        order: 5;
+        text-align: center;
+      }
+    }
   }
 }

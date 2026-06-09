@@ -1,5 +1,5 @@
 .contacts-section {
-  padding: 24px 0 48px 0;
+  padding: 24px 0 0;
 
   @media screen and (min-width: $bp-tablet) {
     padding: 48px 0 96px 0;
@@ -39,17 +39,18 @@
 
   &__map {
     display: flex;
-    width: 100%;
+    width: calc(100% + 40px);
     height: 481px;
     margin: 0 -20px;
-    border-radius: 32px;
+    border-radius: 0;
     flex-shrink: 0;
     overflow: hidden;
 
     @media screen and (min-width: $bp-tablet) {
-      margin: row;
+      margin: 0;
       width: 330px;
       height: 481px;
+      border-radius: 32px;
     }
 
     @media screen and (min-width: $bp-desktop) {
