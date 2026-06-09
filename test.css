@@ -1,17 +1,18 @@
-/* Про нас */
+/* Чому люди обирають нас */
 
-width: 53px;
-height: 16px;
+width: 210px;
+height: 76px;
 
-/* beauty landing 2/H8 */
+/* beauty landing 2/H2 */
 font-family: 'Roboto';
 font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
+font-weight: 500;
+font-size: 32px;
+line-height: 38px;
+text-align: center;
 
-/* beauty landing 2/background */
-color: #ffffff;
+/* beauty landing 2/c1 */
+color: #011c44;
 
 /* Inside auto layout */
 flex: none;
