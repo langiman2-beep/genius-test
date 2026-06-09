@@ -1,20 +1,18 @@
-/* Чому люди обирають нас */
+/* Наші процедури */
 
-width: 210px;
-height: 76px;
+position: absolute;
+width: 247px;
+height: 38px;
+left: 57px;
+top: 1473px;
 
-/* beauty landing 2/H2 */
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 32px;
+font-size: 32.1615px;
 line-height: 38px;
+/* identical to box height */
 text-align: center;
 
 /* beauty landing 2/c1 */
 color: #011c44;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
