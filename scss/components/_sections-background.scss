@@ -1,0 +1,13 @@
+.sections-background {
+  background-image: url('../images/background-why-us.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 158px;
+  margin-top: -104px;
+  @media screen and (min-width: $bp-desktop) {
+    background-size: 100% 100%;
+    padding-top: 176px;
+    margin-top: -24px;
+    // height: auto;
+  }
+}
